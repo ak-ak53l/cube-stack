@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | Cube Stack</title>
+    <title>Unity Web Player | cubestack</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=450 height=800 tabindex="-1" style="width: 450px; height: 800px; background: #80DCFE"></canvas>
-    <script src="Build/Cube Stack Web.loader.js"></script>
+    <canvas id="unity-canvas" width=450 height=800 tabindex="-1" style="width: 450px; height: 800px; background: #FFE6D4"></canvas>
+    <script src="Build/cubestack.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -27,12 +27,12 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/Cube Stack Web.data",
-        frameworkUrl: "Build/Cube Stack Web.framework.js",
-        codeUrl: "Build/Cube Stack Web.wasm",
+        dataUrl: "Build/cubestack.data",
+        frameworkUrl: "Build/cubestack.framework.js",
+        codeUrl: "Build/cubestack.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "ak",
-        productName: "Cube Stack",
+        productName: "cubestack",
         productVersion: "0.1.0",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
