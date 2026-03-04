@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=450 height=800 tabindex="-1" style="width: 450px; height: 800px; background: #FFE6D4"></canvas>
-    <script src="Build/cubestack.loader.js"></script>
+    <script src="Build/cubestackweb.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -27,9 +27,9 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/cubestack.data",
-        frameworkUrl: "Build/cubestack.framework.js",
-        codeUrl: "Build/cubestack.wasm",
+        dataUrl: "Build/cubestackweb.data",
+        frameworkUrl: "Build/cubestackweb.framework.js",
+        codeUrl: "Build/cubestackweb.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "ak",
         productName: "cubestack",
